@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuTec</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    
+  <div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container register">
+        <p>Not have an account? <a href="register.html" target="_blank">Register here</a>.</p>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+  
+  <script>
+  var modal = document.getElementById('id01');
+  
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+  
+<body>
+
+    <div class="wrapper">
+        <div class="nav">
+            <div class="logo">
+                <img src="images/logo_transparent.png">
+            </div>
+            <div class="links">
+                <a href="#" class="mainlink">Home</a>
+                <a href="#about">About</a>
+                <a href="#news">News</a>
+                <a href="#ccd">Common chronic diseases</a>
+                <a href="#shi">Social healthcare influencers</a>
+                <a href="#app">More on app</a>
+                <a class="button" href="#" onclick="document.getElementById('id01').style.display='block'">Login</a>
+            </div>
+        </div>
+
+        <!--Landing Page-->
+
+        <div class="landing">
+            <div class="landingText" data-aos="fade-up" data-aous-duration="1000">
+                <h1>Digital Personal Nurse at <span style="color: #B2001F; font-size: 5vw;"></span>Home</h1>
+                <h3>Monitor your health at home with a minimal-interface, user-friendly website for elders.</h3>
+
+                    <div class="btn">
+                        <a href="#">Read More</a>
+                    </div>
+            </div>
+            <div class="landingImage" data-aos="fade-down" data-aous-duration="2000">
+                <img src="images/banner_img.jpg" alt="">
+            </div>
+        </div>
+
+        <!--Service Section-->
+
+        <div class="about" id="about">
+            <div class="aboutText" data-aos="fade-up" data-aous-duration="1000">
+                <h1>The website was established to <span style="color: #ec6e5b;font-size:3vw;">improve public health.</span> </h1>
+                <img src="images/about.png" width="650" height="531" alt="">
+            </div>
+            <div class="aboutList" data-aos="fade-left" data-aous-duration="1000">
+                <ol>
+                    <li>
+                        <span>01</span>
+                        <p>Simple Operation</p>
+                    </li>
+                    <li>
+                        <span>02</span>
+                        <p>Up-todate News</p>
+                    </li>
+                    <li>
+                        <span>03</span>
+                        <p>Accurate Information</p>
+                    </li>
+                    <li>
+                        <span>04</span>
+                        <p>24 Hours Support</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!--Info Section-->
+
+        <div class="infoSection" id="news">
+          <div class="infoHeader" data-aos="fade-up" data-aous-duration="1000">
+            <h1>We Provide Latest Health Information <br> <span style="color: #e4614d;"></span> In order To Top Service.</h1>
+          </div>
+          <div class="infoCards">
+            <div class="card one" data-aos="fade-up" data-aous-duration="1000">
+              <img src="images/news.png" class="cardoneImg" alt="" data-aos="fade-up" data-aous-duration="1100">
+              <div class="cardbgone"></div>
+              <div class="cardContent">
+                <h2>Doctors</h2>
+                <p>Information about well-knowm doctors in different countries.</p>
+                <a href="#">
+                  <div class="cardBtn">
+                    <a href="update.html" target="_blank"><img src="images/next.png" alt="" class="cardIcon"></a>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="card two" data-aos="fade-up" data-aous-duration="1300">
+              <img src="images/news.png" class="cardtwoImg" alt="" data-aos="fade-up" data-aous-duration="1200">
+              <div class="cardbgtwo"></div>
+              <div class="cardContent">
+                <h2>Health Centers</h2>
+                <p>Some prestigious hospitals in the local and around the world.</p>
+                <a href="#">
+                  <div class="cardBtn">
+                    <a href="update.html" target="_blank"><img src="images/next.png" alt="" class="cardIcon"></a>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="card three" data-aos="fade-up" data-aous-duration="1600">
+              <img src="images/news.png" class="cardthreeImg" alt="" data-aos="fade-up" data-aous-duration="1300">
+              <div class="cardbgthree"></div>
+              <div class="cardContent">
+                <h2>Current Research</h2>
+                <p>Recent scientific studies on disease strains, viruses, drugs and vaccines.</p>
+                <a href="#">
+                  <div class="cardBtn">
+                    <a href="update.html" target="_blank"><img src="images/next.png" alt="" class="cardIcon"></a>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Diseases Section-->
+        <div class="blog-slider" id="ccd">
+          <div class="blog-slider__wrp swiper-wrapper">
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="images/hbp.jpg" alt="">
+              </div>
+              <div class="blog-slider__content">
+                <span class="blog-slider__code">Top 01</span>
+                <div class="blog-slider__title">Hypertension (high blood pressure)</div>
+                <div class="blog-slider__text">Nearly 60% of older adults were treated for hypertension. 
+                  When your heart pumps a lot of blood, 
+                  and you have narrow arteries which resist the flow, 
+                  that`s when you get high blood pressure, also known as hypertension. 
+                  The danger of hypertension is not only that you can have it for years and not know it, 
+                  but it can cause other serious health conditions, like stroke and heart attacks.</div>
+                  <a href="update.html" class="blog-slider__button" target="_blank">READ MORE</a>
+              </div>
+            </div>
+      
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="images/hc.jpg" alt="">
+              </div>
+              <div class="blog-slider__content">
+                <span class="blog-slider__code">Top 02</span>
+                <div class="blog-slider__title">High cholesterol</div>
+                <div class="blog-slider__text">More than 50% of older adults were treated for 
+                  high cholesterol—a condition that occurs when your body has an excess of bad fats
+                  (or lipids), resulting in your arteries getting clogged, 
+                  which can lead to heart disease.</div>
+                  <a href="update.html" class="blog-slider__button" target="_blank">READ MORE</a>
+              </div>
+            </div>
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="images/art.jpg" alt="">
+              </div>
+              <div class="blog-slider__content">
+                <span class="blog-slider__code">Top 03</span>
+                <div class="blog-slider__title">Arthritis</div>
+                <div class="blog-slider__text">About 35% of older adults were treated for 
+                  arthritis—an inflammation of your joints, 
+                  which causes pain and stiffness and is more common in women.</div>
+                  <a href="update.html" class="blog-slider__button" target="_blank">READ MORE</a>
+              </div>
+            </div>
+          </div> 
+          <div class="blog-slider__pagination"></div>
+        </div>
+      
+        
+      
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+        <script src="script.js"></script>      
+
+        <!--Influencers Section-->
+
+        <div class="container2" id="shi">
+          <div class="section-title">
+            <h1>Social Healthcare Influencer</h1>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="kol">
+                <div class="kol-img">
+                  <img src="images/mike.jpg" style="height: 350px; width: 350px;" alt="KOL Image">
+                </div>
+                <div class="kol-content">
+                  <h2>Dr. Mikhail Varshavski</h2>
+                  <h3>Physician &amp; Chief medical host</h3>
+                  <div class="kol-social">
+                    <a class="social-tw" href="https://twitter.com/realdoctormike" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="social-fb" href="https://www.facebook.com/realdoctormike/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a class="social-in" href="https://www.instagram.com/doctor.mike/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="social-yt" href="https://www.youtube.com/@DoctorMike" target="_blank"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="kol">
+                <div class="kol-img">
+                  <img src="images/jennifer.jpg" style="height: 350px; width: 350px;" alt="KOL Image">
+                </div>
+                <div class="kol-content">
+                  <h2>Dr. Jennifer Arnold</h2>
+                  <h3>Neonatologist &amp; Cancer survivor</h3>
+                  <div class="kol-social">
+                    <a class="social-tw" href="https://twitter.com/JenArnoldMD" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="social-in" href="https://www.instagram.com/jenarnoldmd/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="social-yt" href="https://www.youtube.com/@JenniferArnoldMD" target="_blank"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="kol">
+                <div class="kol-img">
+                  <img src="images/andrew.jpg" alt="KOL Image">
+                </div>
+                <div class="kol-content">
+                  <h2>Dr. Andrew Weil</h2>
+                  <h3>Integrative medicine specialist &amp; Health praticer</h3>
+                  <div class="kol-social">
+                    <a class="social-tw" href="https://twitter.com/DrWeil" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="social-fb" href="https://www.facebook.com/DrWeil/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a class="social-in" href="https://www.instagram.com/drweil/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="social-yt" href="https://www.youtube.com/channel/UCq8x6__MViiJDahuuuN0bog" target="_blank"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Banner and Footer-->
+
+        <div class="banner" id="app">
+          <div class="bannerText" data-aos="fade-right" data-aous-duration="1000">
+            <h1>Download the NuTec App Today <br> <span style="font-size: 1.6vw;font-weight: normal;" class="bannerInnerText">
+                Stay Updated and get all your medical needs taken care of!
+            </span></h1>
+            <a href="#"><img src="images/android.png" alt=""></a>
+            <a href="#"><img src="images/ios.jpg"></a>
+          </div>
+          <div class="bannerImg" data-aos="fade-up" data-aous-duration="1000">
+            <img src="images/app.png" alt="">
+          </div>
+        </div>
+
+        <div class="footer">
+          <h1>NuTec</h1>
+
+          <div class="footerlinks">
+            <a href="#" class="mainlink">Home</a>
+            <a href="#">About</a>
+            <a href="#">News</a>
+            <a href="#">Common chronic diseases</a>
+            <a href="#">Social Healthcare Influencers</a>
+            <a href="#">More on app</a>
+          </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
